@@ -1,50 +1,46 @@
-# LSTM Autoencoder
+# LSTM Autoencoder & 2D-LSTM-Autoencoder
 
-Welcome to the LSTM Autoencoder project! This repository provides examples of how to use LSTM Autoencoders for time series data reconstruction and anomaly detection.
+Welcome to the **LSTM Autoencoder** and **2D-LSTM-Autoencoder** projects! This repository offers comprehensive examples and implementations of LSTM Autoencoders for both 1D and 2D time series data reconstruction and anomaly detection.
 
-## Overview
+# What is an Autoencoder?
 
-### What is an Autoencoder?
+An Autoencoder is a type of neural network that learns efficient representations of data. It works by compressing input data into a latent space representation and then reconstructing the original input from this compressed form. This process is valuable for various tasks, including noise removal, feature extraction, and data reconstruction.
 
-In simple terms, an Autoencoder is a type of neural network used to learn efficient representations of data. It works by taking an input sample, encoding it into a compressed form (called the latent variable), and then reconstructing the input from this compressed representation. This process helps in denoising and feature extraction.
+# Applications
 
-For a detailed explanation of LSTM Autoencoders, check out this [Medium article](https://adnanmushtaq5.medium.com/lstm-autoencoder-9094615a019d).
+# 1. Series Data Reconstruction with LSTM Autoencoders
 
-## Applications
+Autoencoders are designed to compress input data into a latent space representation and then reconstruct it from this compressed form. This technique is useful for removing noise and capturing essential features from the data. For more insights into LSTM Autoencoders and their practical applications, refer to this [blog post](https://adnankarol.medium.com/lstm-autoencoder-9094615a019d).
 
-### Anomaly Detection
+# 2. Anomaly Detection
 
-LSTM Autoencoders are particularly useful for anomaly detection in time series data. By training an autoencoder on normal (non-anomalous) data, it learns to reconstruct this data effectively. When presented with anomalous data, the reconstruction error will be significantly higher, allowing us to detect anomalies.
+LSTM Autoencoders are particularly effective for detecting anomalies in time series data. By training an autoencoder on normal (non-anomalous) data, the model learns to accurately reconstruct these sequences. When the model encounters data with anomalies, the reconstruction error will be significantly higher, making it easier to identify anomalies.
 
-To understand more about using LSTM Autoencoders for anomaly detection, read my [Medium article on the subject](https://adnanmushtaq5.medium.com/lstm-autoencoder-for-anamoly-detection-a0d77bb1540e).
+Learn more about anomaly detection using LSTM Autoencoders in my [Medium article on the subject](https://medium.com/analytics-vidhya/lstm-autoencoder-for-anamoly-detection-a0d77bb1540e).
 
-## Detailed Explanation
+# 3. 2D-LSTM-Autoencoder
 
-### Series Data Reconstruction with LSTM Autoencoders
+Building on the 1D LSTM Autoencoders, this repository also includes an implementation of the 2D LSTM Autoencoder. This extension is designed to handle 2D time series data, offering enhanced capabilities for data reconstruction and anomaly detection.
 
-Autoencoders work by compressing input data into a latent space representation and then reconstructing the input from this compressed form. This approach is useful for removing noise and capturing important features from the data. 
+**Introduction to 2D LSTM Autoencoder:** [Medium article](https://adnanmushtaq5.medium.com/introduction-to-2-dimensional-lstm-autoencoder-47c238fd827f)
 
-For more insights into LSTM Autoencoders, including practical applications and implementations, refer to this [blog post](https://towardsdatascience.com/step-by-step-understanding-lstm-autoencoder-layers-ffab055b6352).
-
-### GitHub Repository
-
-Explore the code and examples in the GitHub repository: [lstm-autoencoder](https://github.com/adnanmushtaq1996/lstm-autoencoder).
-
-### Applications of Autoencoders
-
-Autoencoders can be used for various purposes:
-- **Noise Removal**
-- **Feature Extraction** (using only the encoder part)
-- **Anomaly Detection**
-
-This repository focuses on anomaly detection in time series data using LSTM Autoencoders. We train the autoencoder on normal data, allowing it to reconstruct inputs accurately. When faced with data containing anomalies, the reconstruction error will be higher, making it easier to identify anomalies.
-
-For a continuation of previous discussions on data structuring, model architecture, and output analysis, refer to my earlier blog.
+This addition focuses on reconstructing and analyzing 2D time series data, applying the principles of LSTM Autoencoders to more complex datasets.
 
 ## How It Works
 
-1. **Train the Autoencoder**: The model learns to reconstruct normal sequences.
-2. **Evaluate Reconstruction Error**: Check Mean Squared Error (MSE) between reconstructed output and the original input.
-3. **Detect Anomalies**: Evaluate the reconstruction error for sequences with anomalies. High error indicates the presence of anomalies.
+1. **Train the Autoencoder**: The model learns to reconstruct normal sequences from training data.
+2. **Evaluate Reconstruction Error**: Calculate the Mean Squared Error (MSE) between the reconstructed output and the original input.
+3. **Detect Anomalies**: Assess the reconstruction error for sequences with anomalies. High error values indicate the presence of anomalies.
 
-By leveraging Autoencoders and reconstruction errors, this project demonstrates how to identify anomalies effectively.
+By leveraging Autoencoders and analyzing reconstruction errors, this project demonstrates effective methods for identifying anomalies in both 1D and 2D time series data.
+
+Explore the code, documentation, and articles provided to gain a deeper understanding of LSTM Autoencoders and their diverse applications.
+
+# Additional Information
+
+- **Python Version**: 3.7.7
+- **Pip Version**: 19.2.3
+
+### Contact
+
+For queries or issues, reach out via LinkedIn: [Adnan Karol](https://www.linkedin.com/in/adnan-karol-aa1666179/)
